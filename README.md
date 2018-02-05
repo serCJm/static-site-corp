@@ -1,2 +1,13 @@
-# static-site-corp
-A responsite website template for a small corporate website.
+# <a href="#">Corp - A Small Corporation Website Template</a>
+
+Corp is a responsive template for a small business. It features a mobile responsive design.
+
+## Goals
+
+- Practice HTML and CSS
+- Improve Flexbox skills
+
+## Implementation
+
+- Editor: VS Code
+- Front-end: HTML, CSS.
