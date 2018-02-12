@@ -14,7 +14,7 @@ html {
 /* SET FLUID TYPOGRAPHY - 16px at 400px viewport and 14px minimum */
 
 :root {
-    font-size: calc(0.875em + .5vw);
+    font-size: calc(0.600em + .5vw);
 }
 
 h1 {
@@ -38,5 +38,50 @@ p {
 }
 
 body {
-    margin: 5% 10% 0;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #fff;
+}
+
+/* MODULES */
+
+.flx-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    background-image: url('images/city-cover.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+}
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;  
+}
+
+.logo {
+    font-size: 1.2rem;
+}
+
+.navbar a {
+    color: #474747;
+    margin-left: 1rem;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    height: 4.5rem;
+}
+
+.navbar-links li:last-child {
+    margin-right: 1rem;
 }
