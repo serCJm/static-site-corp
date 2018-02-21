@@ -37,6 +37,10 @@ p {
     font-size: 1rem;
 }
 
+h1, h2, h3, h4, .heading {
+    font-family: Georgia,"Times New Roman",Times,serif;
+}
+
 body {
     font-family: Verdana, Geneva, sans-serif;
     color: #fff;
@@ -45,9 +49,22 @@ body {
 /* MODULES */
 
 .flx-container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
+}
+
+.btn-link {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #FFC58F;
+    background-color: #FFC58F;
+    padding: .5rem 1rem;
+}
+
+.btn-link:hover {
+    background-color: transparent;
 }
 
 /* HEADER */
@@ -68,7 +85,7 @@ header {
 }
 
 .logo {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .navbar a {
@@ -85,3 +102,182 @@ header {
 .navbar-links li:last-child {
     margin-right: 1rem;
 }
+
+.main-heading {
+    margin: 5% auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-heading p:first-child {
+    letter-spacing: 5px;
+}
+
+.main-heading .btn-link {
+    margin-top: 8%;
+}
+
+.contact-blocks {
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: #FFC58F;
+    height: 7rem;
+}
+
+.contact-blocks li {
+    flex: 0 0 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-blocks li:not(:last-child) {
+    border-right: 1px solid #fff;
+}
+.contact-info h4, .contact-info p {
+    font-size: .9rem;
+    margin: 0;
+}
+
+/* SERVICES */
+
+.services {
+    background-color: #F6F6F6;
+    color: #474747;
+    padding: 5% 0;
+}
+
+.services > h1, .services > p {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+.services > p {
+    padding-bottom: 3%;
+    font-size: .8rem;
+}
+
+.services-blocks {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services-blocks li img {
+    width: 100%;
+}
+
+.services-blocks li {
+    min-width: 230px;
+    flex: 0 1 30%;
+    background-color: #fff;
+}
+
+.services-blocks-text {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.services-blocks-text h4, .services-blocks-text p {
+    width: 100%;
+    font-size: .7rem;
+}
+
+.services-blocks-text a {
+    display: block;
+    font-size: .7rem;
+    color: #FFC58F;
+    margin-bottom: .5rem;
+}
+
+/* FEATURES */
+
+.services.features {
+    background-color: #fff;
+}
+
+.features-blocks {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.features-blocks li {
+    flex: 0 1 23%;
+}
+
+.features-blocks .features-link {
+    display: block;
+    color: #fff;
+}
+
+.features-blocks .features-link:hover {
+    color: #FFC58F;
+}
+
+.features-blocks .features-icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: #FFC58F;
+    border: 1px solid #FFC58F;
+    text-align: center;
+}
+
+.features-blocks .features-icon:hover {
+    background-color: #fff;
+}
+
+.features-blocks h4, .features-blocks p {
+    font-size: .8rem;
+}
+
+/* PROMO */
+
+.promo {
+    background:  linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ), url('images/phone-on-desk.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.promo-container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promo-text {
+    margin: 2rem 0;
+}
+
+.promo-text h1 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.promo-text p {
+    margin: 0;
+    font-size: .8rem;
+}
+
+.promo-btn {
+    display: block;
+    padding: .5rem 1rem;
+    text-align: center;
+    color: #fff;
+    background-color: #FFC58F;
+    border: 1px solid #FFC58F;
+    transition: background-color .3s ease-in;
+}
+
+.promo-btn:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: background-color .3s ease-in;
+}
+
+
+
+
+
