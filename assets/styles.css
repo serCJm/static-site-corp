@@ -277,7 +277,14 @@ header {
     transition: background-color .3s ease-in;
 }
 
+/* BENEFITS */
 
+.services.benefits {
+    background-color: #fff;
+}
 
+.benefits .services-blocks p {
+    font-size: .8rem;
+}
 
 
