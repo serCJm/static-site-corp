@@ -57,14 +57,17 @@ body {
 .btn-link {
     display: inline-block;
     text-transform: uppercase;
+    font-weight: 900;
     color: #fff;
     border: 1px solid #FFC58F;
     background-color: #FFC58F;
     padding: .5rem 1rem;
+    transition: background-color .5s ease-out;
 }
 
 .btn-link:hover {
     background-color: transparent;
+    transition: background-color .5s ease-out;
 }
 
 /* HEADER */
