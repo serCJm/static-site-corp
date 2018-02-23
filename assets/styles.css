@@ -289,6 +289,131 @@ header {
 
 /* CONTACTS */
 
+.contacts-bgr {
+    background:  linear-gradient(rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)
+  ), url('images/map.jpg');
+}
 
+.contacts {
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 3rem 0;
+    color: #cbcbcb;
+    font-size: .8rem;
+    font-family: Verdana, Geneva, sans-serif;
+}
 
+.contacts ul {
+    flex: 0 1 23%;
+}
+
+.contacts ul li:first-child {
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.site-links li:not(:first-child):not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.site-links li:nth-child(3) a {
+    margin-right: .5rem;
+    color: #cbcbcb;
+    transition: color .3s ease-in;
+}
+
+.site-links li:nth-child(3) a:first-child {
+    color: #FFC58F;
+}
+
+.site-links li:nth-child(3) a:hover:not(:first-child) {
+    color: #FFC58F;
+    transition: color .3s ease-in;
+}
+
+.site-links li:nth-child(4) a {
+    display: inline-block;
+    color: #fff;
+    background-color: #474747;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    padding-top: .5rem;
+}
+
+.site-links li:nth-child(4) a:hover:first-child {
+    background-color: #00ccbd;
+}
+
+.site-links li:nth-child(4) a:hover:nth-child(2) {
+    background-color: #3b5998;
+}
+
+.site-links li:nth-child(4) a:hover:nth-child(3) {
+    background-color: #ea4c89;
+}
+
+.site-links li:nth-child(4) a:hover:last-child {
+    background-color: #0e76a8;
+}
+
+.contacts .contact-info li:not(:first-child):not(:last-child) {
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #474747;
+}
+
+.contacts .contact-info li:not(:first-child):not(:nth-child(2)) {
+    padding-top: .5rem;
+}
+
+.contacts .contact-info li:not(:first-child) {
+    padding-left: 1rem;
+}
+
+.contacts .contact-info li:nth-child(2) {
+    padding-left: 2rem;
+}
+
+.contacts .news-articles li:not(:first-child):not(:last-child) {
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #474747;
+}
+
+.contacts .news-articles li:not(:first-child):not(:nth-child(2)) {
+    padding-top: .5rem;
+}
+
+.contacts .news-articles li:not(:first-child) a {
+    color: #FFC58F;
+}
+
+.contacts .sign-up input {
+    display: block;
+    padding: .25rem;
+    margin: .5rem 0;
+}
+
+.contacts .sign-up input:focus {
+    border-color: #FFC58F;
+    outline: none;
+}
+
+.contacts .sign-up button {
+    color: #fff;
+    background-color: #FFC58F;
+    padding: .5rem .9rem;
+    border: none;
+    font-weight: bold;
+}
+
+/* CREDITS */
+
+.credits {
+    height: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    font-size: .7rem;
+}
 
