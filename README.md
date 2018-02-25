@@ -1,4 +1,4 @@
-# <a href="#">Corp - A Small Corporation Website Template</a>
+# <a href="http://static-site-corp.surge.sh/">Corp - A Small Corporation Website Template</a>
 
 Corp is a responsive template for a small business. It features a mobile responsive design.
 
