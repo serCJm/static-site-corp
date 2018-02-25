@@ -10,7 +10,6 @@ html {
     box-sizing: inherit;
 }
 
-
 /* SET FLUID TYPOGRAPHY - 16px at 400px viewport and 14px minimum */
 
 :root {
@@ -18,7 +17,7 @@ html {
 }
 
 h1 {
-    font-size:  1.602rem ;
+    font-size: 1.602rem;
 }
 
 h2 {
@@ -37,8 +36,12 @@ p {
     font-size: 1rem;
 }
 
-h1, h2, h3, h4, .heading {
-    font-family: Georgia,"Times New Roman",Times,serif;
+h1,
+h2,
+h3,
+h4,
+.heading {
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 body {
@@ -84,7 +87,7 @@ header {
 .navbar {
     justify-content: space-between;
     align-items: center;
-    background: #fff;  
+    background: #fff;
 }
 
 .logo {
@@ -107,11 +110,15 @@ header {
     color: #FFC58F;
 }
 
+a.mobile-nav {
+    display: none;
+}
+
 .dropdown-content {
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0, 0, 0, .6);
     margin-left: 1rem;
     min-width: 8rem;
     z-index: 1;
@@ -170,7 +177,7 @@ header {
 }
 
 .contact-blocks li {
-    flex: 0 0 33%;
+    flex: 0 1 33%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,9 +186,52 @@ header {
 .contact-blocks li:not(:last-child) {
     border-right: 1px solid #fff;
 }
-.contact-info h4, .contact-info p {
+
+.contact-info h4,
+.contact-info p {
     font-size: .9rem;
     margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+    a.mobile-nav {
+        display: block;
+        margin-right: 2rem;
+    }
+    .navbar-links {
+        display: none;
+        height: 100%;
+        flex: 0 1 100%;
+    }
+    .dropdown-content {
+        background-color: #fff;
+    }
+    .dropdown-content a {
+        color: #000;
+    }
+    .dropdown:hover .dropdown-content {
+        position: static;
+    }
+    .open {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1340px) {
+    .contact-blocks {
+        display: block;
+        width: 350px;
+        height: 100%;
+    }
+    .contact-blocks li {
+        height: 70px;
+    }
+    .contact-blocks li:not(:last-child) {
+        border-right: none;
+    }
 }
 
 /* SERVICES */
@@ -192,13 +242,14 @@ header {
     padding: 5% 0;
 }
 
-.services > h1, .services > p {
+.services>h1,
+.services>p {
     width: 70%;
     margin: 0 auto;
     font-size: 1rem;
 }
 
-.services > p {
+.services>p {
     padding-bottom: 3%;
     font-size: .8rem;
 }
@@ -216,6 +267,8 @@ header {
     min-width: 230px;
     flex: 0 1 30%;
     background-color: #fff;
+    margin: auto;
+    margin-top: 1rem;
 }
 
 .services-blocks-text {
@@ -223,7 +276,8 @@ header {
     margin: 0 auto;
 }
 
-.services-blocks-text h4, .services-blocks-text p {
+.services-blocks-text h4,
+.services-blocks-text p {
     width: 100%;
     font-size: .7rem;
 }
@@ -248,6 +302,8 @@ header {
 
 .features-blocks li {
     flex: 0 1 23%;
+    min-width: 150px;
+    margin: auto;
 }
 
 .features-blocks .features-link {
@@ -271,17 +327,15 @@ header {
     background-color: #fff;
 }
 
-.features-blocks h4, .features-blocks p {
+.features-blocks h4,
+.features-blocks p {
     font-size: .8rem;
 }
 
 /* PROMO */
 
 .promo {
-    background:  linear-gradient(
-        rgba(0, 0, 0, 0.5), 
-        rgba(0, 0, 0, 0.5)
-      ), url('images/phone-on-desk.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/phone-on-desk.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -335,14 +389,13 @@ header {
 /* CONTACTS */
 
 .contacts-bgr {
-    background:  linear-gradient(rgba(0, 0, 0, 0.5), 
-    rgba(0, 0, 0, 0.5)
-  ), url('images/map.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/map.jpg');
 }
 
 .contacts {
     justify-content: space-between;
     align-items: stretch;
+    flex-wrap: wrap;
     padding: 3rem 0;
     color: #cbcbcb;
     font-size: .8rem;
@@ -351,6 +404,9 @@ header {
 
 .contacts ul {
     flex: 0 1 23%;
+    margin: auto;
+    min-width: 150px;
+    margin-top: 2rem;
 }
 
 .contacts ul li:first-child {
@@ -461,4 +517,3 @@ header {
     color: #000;
     font-size: .7rem;
 }
-
